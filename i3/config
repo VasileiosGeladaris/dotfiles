@@ -219,7 +219,7 @@ exec_always --no-startup-id fix_xcursor
 exec_always --no-startup-id  sh $HOME/.config/polybar/launch.sh
 exec --no-startup-id "setxkbmap -model pc105 -layout us,gr -option grp:alt_shift_toggle"
 exec --no-startup-id "xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'"
-exec --no-startup-id xrandr --output eDP1 --left-of DP1
+exec --no-startup-id xrandr --output eDP1 --primary --mode 1920x1080 --pos 0x332 --rotate normal --output DP1 --off --output HDMI1 --mode 1920x1080 --pos 1920x0 --rotate normal --output HDMI2 --off --output VIRTUAL1 --off
 
 #▄     ▄               █
 #█  █  █  ▄▄▄    ▄ ▄▄  █   ▄   ▄▄▄   ▄▄▄▄    ▄▄▄    ▄▄▄    ▄▄▄    ▄▄▄
@@ -250,9 +250,9 @@ workspace $ws2 output eDP1
 workspace $ws3 output eDP1
 workspace $ws4 output eDP1
 workspace $ws5 output eDP1
-workspace $ws6 output DP1
-workspace $ws7 output DP1
-workspace $ws8 output DP1
+workspace $ws6 output HDMI1
+workspace $ws7 output HDMI1
+workspace $ws8 output HDMI1
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
@@ -330,9 +330,9 @@ set_from_resource $term_color15    color15
 # FFC107
 # Theme colors
 # class                   border  backgr. text    indic.   child_border
-  client.focused          #339c83 #339c83 #000000 #FDF6E3
-  client.focused_inactive #2F3D44 #2F3D44 #ffffff #454948
-  client.unfocused        #2F3D44 #2F3D44 #ffffff #454948
+  client.focused          #654062 #654062 #FFFFFF #FDF6E3
+  client.focused_inactive #242424 #242424 #ffffff #454948
+  client.unfocused        #242424 #242424 #ffffff #454948
   client.urgent           #CB4B16 #FDF6E3 #1ABC9C #268BD2
   client.placeholder      #01777j #0c0c0c #ffffff #000000
 

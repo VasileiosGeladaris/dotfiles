@@ -1,7 +1,9 @@
 "PLUG
 call plug#begin('~/.config/nvim/plugged')
 " Plug 'sickill/vim-monokai' " Sublime
-Plug 'morhetz/gruvbox' " Theme
+" Plug 'morhetz/gruvbox' " Theme
+" Plug 'wadackel/vim-dogrun' " Theme
+Plug 'liuchengxu/space-vim-dark' " Theme
 Plug 'neoclide/coc.nvim', {'branch': 'release'}  " the coc
 Plug 'itchyny/lightline.vim' " Status Bar
 Plug 'jiangmiao/auto-pairs' " Pairs []{}''...
@@ -114,7 +116,10 @@ set mouse+=a
 set nu " Enable line numbers
 set relativenumber " Enable relative line numbers
 set background=dark " Set the background theme to dark
-colorscheme gruvbox " Set the colorscheme
+"colorscheme dogrun " Set the colorscheme
+colorscheme space-vim-dark " Set the colorscheme
+color space-vim-dark
+"set termguicolors
 set autoindent " Set code autoindentation
 set cursorline " Highlight current line
 set tabstop=4 " One TAB appears to be 4 spaces

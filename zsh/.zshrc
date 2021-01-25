@@ -73,14 +73,8 @@ alias autoremove='sudo pacman -Rcns $(pacman -Qdtq)'
 alias desktop='cd ~/Desktop'
 alias downloads='cd ~/Downloads'
 alias home='cd ~'
-alias hy255='cd ~/Desktop/hy255'
-alias hy225='cd ~/Desktop/hy225'
-alias hy118='cd ~/Desktop/hy118'
-alias random='cd ~/Desktop/random'
-alias friends='cd ~/Desktop/random/friends'
 alias c='clear'
 alias sdn='shutdown now'
-alias weather='curl wttr.in/Heraklion'
 alias vimtutor='v ~/Desktop/random/vimtutor'
 alias neofetch='neofetch | lolcat'
 alias brightness='xrandr --output eDP1 --brightness'
@@ -89,8 +83,13 @@ xdgopen(){
     xdg-open $* &>/dev/null & disown
 }
 alias open=xdgopen
+
 # User configuration
 startAndDisOwn(){
      $1 &>/dev/null & disown
 }
 alias start=startAndDisOwn
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

@@ -1,2 +1,1 @@
-# dotfiles
-Personal dotfiles
+## A repository containing my personal dotfiles

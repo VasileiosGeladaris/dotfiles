@@ -17,18 +17,18 @@
 ;foreground = #ffffff
 
 ; Material
-black      = #263238
-red        = #ff9800
-green      = #8bc34a
-yellow     = #339c83
+black      = #333333
+red        = #bc6ff1
+green      = #bc6ff1
+yellow     = #9d65c9
 blue       = #03a9f4
-magenta    = #e91e63
-cyan       = #009688
+magenta    = #590995
+cyan       = #bc6ff1
 white      = #cfd8dc
 foreground = #eceff1
-background = #263238
+background = #333333
 
-; Isotope dark
+;Isotope dark
 ;black      = #000000
 ;red        = #ff0000
 ;green      = #33ff00
@@ -156,7 +156,7 @@ ws-icon-7 = 8;
 
 label-mode = %mode%
 label-mode-padding = 2
-label-mode-background = #e60053
+label-mode-background = #590995
 
 label-focused = %index% %icon%
 label-focused-foreground = ${colors.yellow}
